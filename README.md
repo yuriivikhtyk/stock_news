@@ -1,0 +1,1 @@
+# stock_news app uses data from https://newsapi.org and https://www.alphavantage.co in order to get data about stock changes and check news connected to that changes and sends an email with results of stock changes and links to top 5 new regarding that topic. 
