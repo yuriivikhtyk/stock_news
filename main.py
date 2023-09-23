@@ -29,10 +29,10 @@ for day, day_data in data["Time Series (Daily)"].items():
 
 #Check if there is a significant(more than 5%) change in price 
 get_news = False
-if abs(float(closing_prices[0])/float(closing_prices[6]) - 1) > 0.05:
+if abs(float(closing_prices[0])/float(closing_prices[1]) - 1) > 0.05:
     get_news = True
 
-stock_change = float(closing_prices[0])/float(closing_prices[6])
+stock_change = float(closing_prices[0])/float(closing_prices[1])
 if stock_change > 1:
     stock_change = "growth: " + str((stock_change - 1)*100) + "%"
 else:
